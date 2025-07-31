@@ -1,0 +1,2 @@
+# MESSAGE
+# My-Diary
