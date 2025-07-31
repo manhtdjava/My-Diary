@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_creat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_back_button_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_more_square" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+            android:id="@+id/iv_dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_700"
+                android:text="24"
+                android:textColor="@color/color_FF7375"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/iv_lldate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plus_jakarta_sans_600"
+                    android:text="Tue"
+                    android:textColor="@color/color_4A514F"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plus_jakarta_sans_600"
+                    android:includeFontPadding="false"
+                    android:text="Jane 2024"
+                    android:textColor="@color/color_4A514F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_emotion" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/iv_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/rl_ads"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        tools:layout_editor_absoluteX="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/iv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_Tilte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_transitsion"
+                    android:fontFamily="@font/plus_jakarta_sans_700"
+                    android:hint="@string/title"
+                    android:inputType="textAutoCorrect"
+                    android:tag="title"
+                    android:textColor="@color/color_4A514F"
+                    android:textColorHint="@color/color_7B8280"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edt_Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/color_transitsion"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:hint="@string/start_typing_here"
+                    android:textColor="@color/color_4A514F"
+                    android:textColorHint="@color/color_7B8280"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_list_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_list_hastag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_list_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/dimBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <FrameLayout
+            android:id="@+id/fr_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            >
+        </FrameLayout>
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/layout_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

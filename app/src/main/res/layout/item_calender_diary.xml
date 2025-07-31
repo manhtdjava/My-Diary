@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_white"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/linearLayout3"
+            android:orientation="vertical">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poltawski_nowy_700"
+                android:lines="1"
+                android:maxLines="2"
+                tools:text="A Culinary Adventu "
+                android:textColor="@color/color_373A3A"
+                android:textSize="24sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/plus_jakarta_sans_400"
+                android:lines="1"
+                tools:text="A Culinary Adventu "
+                android:textColor="@color/color_373A3A"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_emoji"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/emotion1" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

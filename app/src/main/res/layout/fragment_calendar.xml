@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="14dp"
+        android:fontFamily="@font/poltawski_nowy_700"
+        android:text="@string/calender"
+        android:textColor="#292B2B"
+        android:textSize="29sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:elevation="@dimen/_10sdp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/preMonth"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/iv_pr_calender" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/plus_jakarta_sans_700"
+                android:gravity="center"
+                android:text="Dec 2023"
+                android:textColor="@color/color_FF7375"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/nextMonth"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/iv_next_calander" />
+
+        </LinearLayout>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_320sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:background="@drawable/bg_calendar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mcv_dateTextAppearance="@style/dateText"
+            app:mcv_firstDayOfWeek="sunday"
+            app:mcv_headerTextAppearance="@style/monthText"
+            app:mcv_leftArrow="@drawable/ic_transparent"
+            app:mcv_rightArrow="@drawable/ic_transparent"
+            app:mcv_showOtherDates="all"
+            app:mcv_tileHeight="0dp"
+            app:mcv_tileSize="0dp"
+            app:mcv_tileWidth="0dp"
+            app:mcv_weekDayTextAppearance="@style/weekText" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="14dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+        tools:layout_editor_absoluteX="14dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_Day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_700"
+                android:textColor="@color/color_FF7375"
+                android:textSize="24sp"
+                tools:text="24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_Rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/plus_jakarta_sans_600"
+            android:textColor="@color/color_4A514F"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txt_Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/plus_jakarta_sans_600"
+            android:textColor="@color/color_4A514F"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        android:layout_marginBottom="30dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rL_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_item_white"
+        android:paddingVertical="26.5dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/there_is_no_diary_for_this_date"
+            android:textColor="#7B8280"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

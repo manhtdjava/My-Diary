@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_white"
+        android:padding="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/linearLayout3"
+            android:orientation="vertical"
+            android:layout_marginEnd="15dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_Day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24"
+                        android:fontFamily="@font/plus_jakarta_sans_700"
+                        android:textColor="@color/color_FF7375"
+                        android:textSize="24sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_FF7375" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_Rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/plus_jakarta_sans_600"
+                    android:textColor="@color/color_4A514F"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_Month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plus_jakarta_sans_600"
+                    android:textColor="@color/color_4A514F"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_700"
+                android:text="A Culinary Adventu "
+                android:textColor="@color/color_373A3A"
+                android:textSize="24dp"
+                android:lines="1"
+                android:ellipsize="marquee"
+
+                />
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_400"
+                android:text="A Culinary Adventu "
+                android:textColor="@color/color_373A3A"
+                android:textSize="16dp"
+                android:lines="1"
+                android:ellipsize="marquee"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_emoji"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/emotion1" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_music"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_music_item_home"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

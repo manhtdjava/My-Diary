@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "314516844797",
+    "project_id": "asa214-my-diary-v2",
+    "storage_bucket": "asa214-my-diary-v2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314516844797:android:a73632d8f5a51f5af78e94",
+        "android_client_info": {
+          "package_name": "com.dailyjournal.diaryapp.secretdiary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDTPUTGAX0j9yRSU8HVwTJhS8unMChhAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

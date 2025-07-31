@@ -1,0 +1,133 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
+    id 'kotlin-kapt'
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.firebase.crashlytics)
+
+}
+
+android {
+    namespace 'com.dailyjournal.diaryapp.secretdiary'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.dailyjournal.diaryapp.secretdiary"
+        minSdk 26
+        targetSdk 34
+        versionCode 2
+        versionName "1.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        def formattedDate = new Date().format('MM.dd.yyyy')
+        archivesBaseName = "My_Diary${versionName}($versionCode)_${formattedDate}"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+    configurations {
+        configureEach {
+            exclude group: "com.google.android.play", module: "core"
+        }
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation libs.firebase.crashlytics
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    kapt 'com.android.databinding:compiler:3.1.4'
+    implementation 'com.google.android.play:review:2.0.1'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    implementation "com.intuit.ssp:ssp-android:1.1.0"
+    implementation "com.intuit.sdp:sdp-android:1.1.0"
+
+    implementation "com.makeramen:roundedimageview:2.3.0"
+    implementation "com.asksira.android:loopingviewpager:1.4.1"
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+    implementation ("com.github.prolificinteractive:material-calendarview:2.0.1")
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.1.1'
+
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    implementation 'io.github.ParkSangGwon:tedpermission-rx2:3.3.0'
+    implementation 'io.github.ParkSangGwon:tedonactivityresult-rx2:1.0.10'
+
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    def lifecycle_version = "2.6.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    implementation "androidx.activity:activity-ktx:1.9.2"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    implementation "androidx.room:room-runtime:2.7.0"
+    kapt "androidx.room:room-compiler:2.7.0"
+    implementation "androidx.room:room-ktx:2.7.0"
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.4.1'
+    implementation 'com.google.firebase:firebase-config:21.4.1'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    //ads
+    implementation 'com.github.quangchienictu:AmazicAdsLibrary:2.7.2_welcome_below_resume1'
+    implementation 'com.google.android.gms:play-services-ads:24.2.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //mediation
+    implementation 'com.google.ads.mediation:facebook:6.19.0.1'
+    implementation 'com.google.ads.mediation:vungle:7.3.2.0'
+    implementation 'com.google.ads.mediation:applovin:13.2.0.1'
+    implementation 'com.google.ads.mediation:pangle:5.4.1.1.0'
+    implementation 'com.google.ads.mediation:ironsource:8.8.0.0'
+    implementation 'com.unity3d.ads:unity-ads:4.8.0'
+    implementation 'com.google.ads.mediation:unity:4.14.1.0'
+    implementation 'com.google.ads.mediation:mintegral:16.5.21.0'
+    implementation 'com.facebook.android:facebook-android-sdk:18.0.3'
+
+    //fb sdk
+    implementation 'com.facebook.android:facebook-android-sdk:16.0.1'
+    implementation 'com.google.ads.mediation:facebook:6.19.0.1'
+    implementation 'com.adjust.sdk:adjust-android:4.36.1'
+}

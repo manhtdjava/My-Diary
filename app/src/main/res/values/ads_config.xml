@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appsflyer" translatable="false">LikYKU2zUYTct7BoQ7MuJY</string>
+    <string name="fb_app_id" translatable="false">2371909793153779</string>
+    <string name="adjust" translatable="false">l71tkp8h0oao</string>
+    <string name="facebook_client_token" translatable="false">ec4c9672570cd040f5a305cd90cb606a</string>
+
+    <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+<!--    <string name="banner_splash" translatable="false">ca-app-pub-3940256099942544/2014213617</string>-->
+<!--    <string name="open_splash" translatable="false">ca-app-pub-3940256099942544/9257395921</string>-->
+<!--    <string name="inter_splash" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_intro_full" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="inter_intro" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="inter_permission" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_welcome" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="inter_welcome" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="collapse_banner_password" translatable="false">ca-app-pub-3940256099942544/2014213617</string>-->
+<!--    <string name="inter_password" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_password" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="appopen_resume" translatable="false">ca-app-pub-3940256099942544/9257395921</string>-->
+<!--    <string name="native_resume" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_popup" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_mine" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="inter_mine" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="collapse_banner_home" translatable="false">ca-app-pub-3940256099942544/2014213617</string>-->
+<!--    <string name="native_home" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="inter_create" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="inter_preview" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_view_edit" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="rewarded_edit" translatable="false">ca-app-pub-3940256099942544/5224354917</string>-->
+<!--    <string name="rewarded_sound_photo" translatable="false">ca-app-pub-3940256099942544/5224354917</string>-->
+<!--    <string name="inter_save" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="inter_libruary" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_libruary" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+
+</resources>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_setting"
+
+    android:paddingVertical="4dp">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/color_transitsion"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3FBFF"
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/every_day"
+                    android:textColor="@color/color_FF7375"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Monday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Tuesday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Wednesday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Thursday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Friday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Saturday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctl_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="64dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_box_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_no_select_day">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/tv_day_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:text="@string/tv_Sunday"
+                    android:textColor="@color/color_D9000000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_box_8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

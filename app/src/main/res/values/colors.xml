@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_black">#FF000000</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_app">#FF7375</color>
+    <color name="color_F0F8FF">#F0F8FF</color>
+    <color name="color_2E3338">#2E3338</color>
+    <color name="color_transitsion">#00ffffff</color>
+    <color name="color_4A77F8">#4A77F8</color>
+    <color name="color_373A3A">#373A3A</color>
+    <color name="color_B8BBBB">#B8BBBB</color>
+    <color name="color_FF7375">#FF7375</color>
+    <color name="color_D9000000">#D9000000</color>
+    <color name="color_F3FBFF">#F3FBFF</color>
+    <color name="color_4A514F">#4A514F</color>
+    <color name="color_7B8280">#7B8280</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_FFF3F3">#FFF3F3</color>
+    <color name="color_FFB7B7">#FFB7B7</color>
+    <color name="color_1D1D1D">#1D1D1D</color>
+    <color name="color_636363">#636363</color>
+    <color name="color_464710">#464710</color>
+    <color name="color_0E2A44">#0E2A44</color>
+    <color name="color_4B0820">#4B0820</color>
+    <color name="color_741C10">#741C10</color>
+    <color name="color_FFA2DE">#FFA2DE</color>
+    <color name="ted_image_picker_camera_background">#F1F1F1</color>
+    <color name="ted_image_picker_primary">#1976d2</color>
+    <color name="ted_image_picker_zoom_background">#defafafa</color>
+    <color name="ted_image_picker_selected_foreground">#8A000000</color>
+    <color name="color_292B2B">#292B2B</color>
+    <color name="color_F4F5F5">#F4F5F5</color>
+</resources>

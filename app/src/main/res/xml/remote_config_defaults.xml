@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>appopen_resume</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>inter_splash</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>native_language</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>native_intro</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>inter_intro</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>interval_between_interstitial</key>
+        <value>20</value>
+    </entry>
+
+    <entry>
+        <key>show_ads</key>
+        <value>true</value>
+    </entry>
+
+
+</defaultsMap>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.dailyjournal.diaryapp.secretdiary.ui.creatnew.library.tedImagePicker.util.TextFormatUtil" />
+
+        <variable
+            name="selectedAlbum"
+            type="com.dailyjournal.diaryapp.secretdiary.ui.creatnew.library.tedImagePicker.model.Album"/>
+
+        <variable
+            name="isOpened"
+            type="boolean" />
+
+        <variable
+            name="imageCountFormat"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="@{selectedAlbum != null}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:maxWidth="120dp"
+            android:maxLines="1"
+            android:text="@{selectedAlbum.name}"
+            tools:text="@string/all" />
+
+        <TextView
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:text="@{TextFormatUtil.getMediaCountText(imageCountFormat,selectedAlbum.mediaUris.size())}"
+            android:textColor="@color/ted_image_picker_primary"
+            tools:text="40" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@{isOpened? @drawable/ic_arrow_drop_up_black_24dp: @drawable/ic_arrow_drop_down_black_24dp}"
+            tools:src="@drawable/ic_arrow_drop_down_black_24dp" />
+    </LinearLayout>
+</layout>

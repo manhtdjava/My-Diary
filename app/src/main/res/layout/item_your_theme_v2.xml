@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="346dp"
+    android:layout_marginBottom="16dp"
+    android:paddingHorizontal="9dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/color_black"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:visibility="gone" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:riv_border_color="#F4F4F4"
+            app:riv_border_width="1dp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="16dp"
+            tools:src="@drawable/img_choose_theme_0"/>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardBackgroundColor="@color/color_transitsion"-->
+<!--            app:cardCornerRadius="16dp"-->
+<!--            app:cardElevation="0dp">-->
+
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:id="@+id/img"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:scaleType="fitXY"-->
+<!--                tools:src="@drawable/img_choose_theme_0" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</RelativeLayout>

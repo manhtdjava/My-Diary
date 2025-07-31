@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.AdsApp" parent="@style/AdsAppTheme">
+        <item name="android:textSize">8.0sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/ads_icon_app</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">15.0px</item>
+        <item name="android:minHeight">15.0px</item>
+        <item name="android:text">Ad</item>
+    </style>
+
+    <style name="AppTheme.AdsNewV2" parent="@style/AdsAppTheme">
+        <item name="android:textSize">6.6sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:background">@drawable/ads_icon_app</item>
+        <item name="android:paddingLeft">3.5dip</item>
+        <item name="android:paddingRight">3.5dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">12.0px</item>
+        <item name="android:minHeight">12.0px</item>
+        <item name="android:text">Ad</item>
+    </style>
+
+    <style name="AppTheme.AdsNewV3" parent="@style/AdsAppTheme">
+        <item name="android:textSize">8.0sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:background">@drawable/ads_icon_app</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">10.0px</item>
+        <item name="android:minHeight">10.0px</item>
+        <item name="android:text">Ad</item>
+    </style>
+</resources>

@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="5dp">
+        <shape>
+            <solid android:color="#51FFFFFF" /> <!-- Màu bóng -->
+        </shape>
+    </item>
+
+    <!-- Layer 2: Nền chính của View -->
+    <item>
+        <shape>
+            <solid android:color="#52FFFFFF" /> <!-- Màu nền của view -->
+        </shape>
+    </item>
+</layer-list>
+

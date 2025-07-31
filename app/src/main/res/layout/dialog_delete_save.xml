@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17sp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_boder_top"
+            android:padding="15dp"
+            >
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:fontFamily="@font/plus_jakarta_sans_600"
+            android:textColor="@color/color_373A3A"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="17dp"
+            >
+        <TextView
+            android:id="@+id/txt_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17sp"
+            android:gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:textColor="#4A514F"
+            android:text="Do you want to delete"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="15sp"
+            android:background="@drawable/bg_dialog"
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingVertical="15sp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_FF7375"
+            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txtGo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="15sp"
+                android:background="@drawable/bg_item_save"
+                android:gravity="center"
+                android:fontFamily="@font/plus_jakarta_sans_400"
+                android:layout_weight="1"
+                android:paddingVertical="15sp"
+                android:text="@string/ok"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fr_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

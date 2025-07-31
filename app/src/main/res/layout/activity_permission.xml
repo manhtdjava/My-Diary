@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_theme_0"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/poltawski_nowy_700"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:text="@string/Permission"
+        android:textColor="#292B2B"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvContinue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/img_per" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_border_item_permission"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="12dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/iv_set_camera_permission"
+                        android:fontFamily="@font/plus_jakarta_sans_500"
+                        android:text="@string/allow_access_camera"
+                        android:textColor="#020112"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_set_camera_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_switch_not_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_select_camera_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_switch_select"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_border_item_permission"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="12dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/iv_set_record_permission"
+                        android:fontFamily="@font/plus_jakarta_sans_500"
+                        android:text="@string/allow_access_record"
+                        android:textColor="#020112"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_set_record_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_switch_not_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_select_record_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_switch_select"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_border_item_permission"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="12dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/iv_set_storage_permission"
+                        android:fontFamily="@font/plus_jakarta_sans_500"
+                        android:text="@string/allow_access_lib"
+                        android:textColor="#020112"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_set_storage_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_switch_not_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_select_storage_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_switch_select"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="49dp"
+                    android:fontFamily="@font/plus_jakarta_sans_400"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/desc_activity_permission"
+                    android:textColor="@color/color_373A3A"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tvContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/bg_border_btn_continue"
+        android:fontFamily="@font/plus_jakarta_sans_600"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="31.5dp"
+        android:paddingVertical="10dp"
+        android:text="@string/tv_continue"
+        android:textColor="@color/color_app"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/fr_ads"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fr_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

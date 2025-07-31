@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_theme_0">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="83dp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poltawski_nowy_700"
+                android:gravity="center"
+                android:text="@string/choose_your_theme"
+                android:textAllCaps="true"
+                android:textColor="@color/color_373A3A"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_400"
+                android:gravity="center"
+                android:text="@string/select_your_diary_theme"
+                android:textAllCaps="false"
+                android:textColor="#4A514F" />
+
+            <com.asksira.loopingviewpager.LoopingViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_380sdp"
+                android:layout_marginTop="36dp"
+                android:paddingHorizontal="66dp"
+                app:autoScroll="false"
+                app:isInfinite="true"
+                app:scrollInterval="5000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_later"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border_btn_skip"
+                    android:fontFamily="@font/plus_jakarta_sans_500"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="31dp"
+                    android:paddingVertical="13dp"
+                    android:text="@string/later"
+                    android:textColor="#FF7375"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border_btn_confirm"
+                    android:fontFamily="@font/plus_jakarta_sans_500"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="31dp"
+                    android:paddingVertical="13dp"
+                    android:text="@string/select"
+                    android:textColor="#F4F5F5"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

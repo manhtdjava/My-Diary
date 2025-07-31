@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ic_premium"
+            android:fontFamily="@font/poltawski_nowy_700"
+            android:text="@string/app_name"
+            android:textColor="#292B2B"
+            android:textSize="29sp"
+            android:layout_marginEnd="16dp"
+            android:lines="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:includeFontPadding="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_premium"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_premium" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        android:fontFamily="@font/poltawski_nowy_500"
+        android:text="@string/hello_user"
+        android:textColor="#292B2B"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/item_premium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/bg_item_premium"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_700"
+                android:text="@string/premium"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/ic_premium" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/textView"
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:text="@string/get_more_benefit_from_the_app"
+            android:textSize="14sp"
+            android:layout_marginEnd="15dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_item_upgrade"
+            android:fontFamily="@font/plus_jakarta_sans_600"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="@string/upgrade"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_list_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_premium" />
+
+    <LinearLayout
+        android:id="@+id/item_bottom"
+        android:layout_width="277dp"
+        android:layout_height="259dp"
+        android:background="@drawable/bg_tutorial_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="261dp"
+            android:layout_height="156dp"
+            app:srcCompat="@drawable/ic_lus_home"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plus_jakarta_sans_500"
+            android:text="@string/begin_your_diary"
+            android:textSize="16sp"
+            android:textColor="@color/color_373A3A"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plus_jakarta_sans_400"
+            android:text="@string/cherish_the_daily_moments_of_life"
+            android:maxLines="2"
+            android:ellipsize="marquee"
+            android:textSize="14sp"
+            android:textColor="@color/color_373A3A"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:clickable="true"
+        tools:visibility="gone"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
